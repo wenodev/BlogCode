@@ -21,7 +21,8 @@ public class Review {
     @ManyToOne(fetch = FetchType.LAZY)
     private Customer customer;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne(fetch = FetchType.EAGER)
     private Product product;
 
 }
